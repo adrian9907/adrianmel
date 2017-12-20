@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>El Futuro en tus manos</title>
+    <meta charset="utf-8"/>
+    <link rel='stylesheet' type='text/css' href='../CSS/stylecomun.css'/>
+    <link rel='stylesheet' type='text/css' href='../CSS/stylepreguntame.css'/>
+    <link rel='stylesheet' type='text/css' href='../CSS/styleScreen.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="page">
+      <a name="arriba"></a>
+      <header>
+        <img id="nube" src="../img/nube3.png">
+        <h1>Preguntame</h1>
+      </header>
+      <nav>
+        <ul class="navegador">
+          <li class="marcado"><i class="fa fa-home fa-fw"></i><a href="index.html"> Inicio</a></li>
+          <li id="boto" class="marcado"><i class="fa fa-plus-square-o"></i><a href="Sobre mi.html"> Sobre mi</a>
+            <ul id="ocult">
+              <li><i class="fa fa-file-text"></i><a href="MiLibro.html"> Mi libro</a></li>
+            </ul>
+          </li>
+          <li id="actual" class="marcado"><i class="fa fa-question"></i><a href="Preguntame.html"> Preguntame</a></li>
+          <li class="marcado"><i class="fa fa-star"></i><a href="Astros.html"> Todo sobre los Astros</a></li>
+        </ul>
+      </nav>
+      <div id="content">
+        <section id="col1">
+          <article>
+            <p class="centro">Necesitas solucionar algo que te inquieta, te atormenta o te perturba? Ponte en contacto con nosotros. Te ayudaremos como desde hace años llevamos haciéndolo.</p>
+            <div id="slidecontainer">
+              <p>Años: <span id="demo"></span></p>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              <p class="info">Desliza para marcar tu edad</p>
+            </div>
+            <script>
+              var slider = document.getElementById("myRange");
+              var output = document.getElementById("demo");
+              output.innerHTML = slider.value;
+              slider.oninput = function() {
+                output.innerHTML = this.value;}
+            </script>
+            <form action="/action_page.php">
+              <p></p>
+              Email: <input type="email" name="Email"></input><br>
+              <p></p>
+              Mensaje: <textarea name="comentarios" rows=3 cols="30">Querida Albanta, </textarea><br>
+            </form>
+            <a href="Preguntame.html"><button><span>ENVIAR</button></span></a>
+          </article>
+        </section>
+        <section id="col5">
+          <article>
+            <div class="w3-container">
+              <p class="centro">CATEGORÍA</p>
+              <div class="w3-row">
+                <a id="marcar" href="javascript:void(0)" onclick="openCat(event, 'AMOR');"><div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><button>Amor</button></div>
+                </a>
+                <p></p>
+                <a id="marcar" href="javascript:void(0)" onclick="openCat(event, 'TRABAJO');"><div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><button>Trabajo</button></div>
+                </a>
+              </div>
+              <div id="AMOR" class="w3-container cat">
+                <p class="centro">AMOR</p>
+                <hr>
+                <div class="container">
+                  <img id="equipo" src="../img/chica3.jpg">
+                  <p>Querida Albanta, hace dos años que me enamoré perdidamente de un Capricornio. Comenzamos a salir y a los pocos meses me quedé embarazada, y fue entonces cuando me dijo que estaba casado, pero que tenía la intención de separarse porque la relación entre su mujer y él no existía. Se separó y nos fuimos a vivir juntos, pero al poco tiempo comenzó a sentirse mal. Yo no puedo con esta situación, a ver si me puedes ayudar. Soy Cáncer. Muchas gracias.</p>
+                  <button onclick="cambiacolor_texto(this)" class="check"><i class="fa fa-thumbs-up"> </i></button>
+                  <script>
+                    function cambiacolor_texto(elemento){
+                       elemento.style.color="orange" ;}
+                    </script>
+                </div>
+                <div class="containerB">
+                  <img id="equipoB" src="../img/pitonisa2.jpg">
+                  <p>Querida Cáncer, Cáncer y Capricornio, vuestros signos zodiacales se encuentran en oposición en la rueda zodiacal. Lo que a uno le falta, lo tiene el otro y lo cierto es que os complementáis de maravilla. La carta que sale en la tirada, El Mago, nos indica que, a pesar de los inconvenientes, tenéis todo a vuestro favor para ser felices y comenzar una nueva vida juntos que os haga sentiros dichosos el uno con el otro.</p>
+                </div>
+                <hr>
+                <div class="container">
+                  <img id="equipo" src="../img/chico.jpg">
+                  <p>Querida Albanta, mi timidez me paraliza. Desde hace ya tiempo me gusta una chica y le veo todos los días en clase, pero soy muy tímido y me cuesta mucho relacionarme, sobre todo con las chicas. Ella es bastante atenta conmigo, me saluda, intenta acercarse a mí, hablarme, pero yo me bloqueo y no consigo articular palabra. Me gustaría que me dijeras si en un futuro esta situación va a cambiar y conseguiré vencer mi timidez. Soy Virgo. Muchas gracias.</p>
+                  <button onclick="cambiacolor_texto(this)" class="check"><i class="fa fa-thumbs-up"> </i></button>
+                  <script>
+                    function cambiacolor_texto(elemento){
+                    	 elemento.style.color="orange" ;}
+                    </script>
+                </div>
+                <div class="containerB">
+                  <img id="equipoB" src="../img/pitonisa2.jpg">
+                  <p>Querido Virgo, en la tirada de cartas aparece La Luna, que simboliza tus miedos, tus inseguridades… Miedos que tienes que superar porque tu timidez es un freno en tu vida que te impide llevar a cabo tus proyectos y ser feliz. Cuando tú hayas superado esa timidez y abras las puertas de tu vida, el amor llegará… No lo dudes. Mucho ánimo.</p>
+                </div>
+              </div>
+              <div id="TRABAJO" class="w3-container cat">
+                <p class="centro">TRABAJO</p>
+                <hr>
+                <div class="container">
+                  <img id="equipo" src="../img/chica2.jpg">
+                  <p class="equipoA">Querida Albanta, me preocupa que no funcione mi negocio. Soy Sagitario y espero que mi consulta sea seleccionada porque necesito que me ayudes. Nunca he tenido demasiada suerte a nivel profesional. Después de pasar por varios empleos en los que me he sentido explotada, ahora he cobrado un dinero con el que no contaba y quiero destinarlo a un negocio. Estoy pensando abrir una tienda de ropa infantil y me gustaría saber si me va a ir bien porque voy a poner en ello todos mis medios económicos y no quisiera fallar. Muchas gracias por tu ayuda.</p>
+                  <button onclick="cambiacolor_texto(this)" class="check"><i class="fa fa-thumbs-up"> </i></button>
+                  <script>
+                    function cambiacolor_texto(elemento){
+                       elemento.style.color="orange" ;}
+                  </script>
+                </div>
+                <div class="containerB">
+                  <img id="equipoB" src="../img/pitonisa2.jpg">
+                  <p class="equipoB">Querida Sagitario, astrológicamente, el momento no puede ser más positivo para ti porque estás recibiendo una energía muy favorable y todo lo que inicies ahora estará destinado al éxito. Aunque es cierto que tendrás que trabajar duro, todos tus esfuerzos tendrán su recompensa y alcanzarás tus objetivos. Esto también conlleva la idea de liberación, de dejar atrás sinsabores y problemas laborales del pasado. Aprovecha la positiva energía que estás recibiendo para embarcarte en este nuevo proyecto. Mucha suerte.</p>
+              </div>
+            </div>
+            <script>
+            function openCat(evt, catName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("cat");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                 tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+              }
+              document.getElementById(catName).style.display = "block";
+              evt.currentTarget.firstElementChild.className += " w3-border-red";
+            }
+            </script>
+          </article>
+        </section>
+        </div>
+        <footer>
+          <a href="#arriba"><i id="volver" class="fa fa-arrow-circle-up"></i> VOLVER ARRIBA</a>
+          <p class="foot">EL FUTURO EN TUS MANOS</p>
+          <p class="foot">&copy; Copyright 2017</p>
+        </footer>
+      </div>
+    </body>
+</html>

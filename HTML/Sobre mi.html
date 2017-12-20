@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>El Futuro en tus manos</title>
+    <meta charset="utf-8"/>
+    <link rel='stylesheet' type='text/css' href='../CSS/stylecomun.css'/>
+    <link rel='stylesheet' type='text/css' href='../CSS/styleSobreMi.css'/>
+    <link rel='stylesheet' type='text/css' href='../CSS/styleScreen.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="page">
+      <a name="arriba"></a>
+      <header>
+        <img id="nube" src="../img/nube1.png">
+        <h1>Sobre Mi</h1>
+        <h2>Y MI EQUIPO</h2>
+      </header>
+      <nav>
+        <ul class="navegador">
+          <li class="marcado"><i class="fa fa-home fa-fw"></i><a href="index.html"> Inicio</a></li>
+          <li id="boto" class="marcado"><i class="fa fa-plus-square-o"></i><a href="Sobre Mi.html"> Sobre mi</a>
+            <ul id="ocult">
+              <li><i class="fa fa-file-text"></i><a href="MiLibro.html"> Mi libro</a></li>
+            </ul>
+          </li>
+          <li class="marcado"><i class="fa fa-question"></i><a href="Preguntame.html"> Preguntame</a></li>
+          <li class="marcado"><i class="fa fa-star"></i><a href="Astros.html"> Todo sobre los Astros</a></li>
+        </ul>
+      </nav>
+      <div id="content">
+        <section id="col1">
+          <article>
+            <p class="centro">QUIÉN ES ALBANTA SAN ROMÁN?</p>
+            <img id="pitonisa" src="../img/pitonisa.jpg">
+            <p>Pitonisa es aquella mujer vidente que puede adivinar el futuro a través de herramientas esotéricas de videncia, como las cartas del tarot, la bola de cristal, las runa, la quiromancia, entre muchas otras. Hace predicciones y profecías por medio de la magia, para dar a conocer el destino de una persona o de la sociedad, lo le que depará el futuro.</p>
+            <p>Escucho el susurro de la Luna y mi meta es haceros sonreír, Soy Albanta San Román y veo el futuro.</p>
+          </article>
+        </section>
+        <section id="col1">
+          <img id="equipo" src="../img/avatar1.png">
+          <p class="centro">James</p>
+          <div class="popup" onclick="myFunction()">
+            <p class="subtitulo">Click para ver mi correo, soy Especialista de los Astros</p>
+            <span class="popuptext" id="myPopup">james@iam.cat</span>
+          </div>
+          <p>Sobre finales de los 90 estudié en la "Faculty of Astrological Studies" las técnicas de Astro Psicología. Me adentré mas a fondo, con la visión de la Astrología de Liz Greene y Howard Sasportas, entendiendo que muchas veces el carácter hace el destino, los astros inclinan pero no obligan. Una visión más psicológica de esta tecnica se adaptaba en su día a mi mente y carácter con necesidad de pragmatismo. Llegó el momento de seguir avanzando y ayudar con lo que se.</p>
+          <hr>
+          <img id="equipo" src="../img/avatar2.png">
+          <p class="centro">Olga</p>
+          <div class="popup" onclick="myFunction2()">
+            <p class="subtitulo">Click para ver mi correo, soy Especialista en Rituales y Hechizos</p>
+            <span class="popuptext" id="myPopup2">olga@iam.cat</span>
+          </div>
+          <p>Desde pequeña mi abuela ya realizaba rituales. Conforme iba creciendo me iba nutriendo de todo eso y finalmente soy yo quien en honor a mi abuela hace estos rituales y terapias alternativas para ayudar a la gente con el amor, el dinero, la amistad,... Conozco a Albanta desde hace 35 años y me alegro de poder formmar parte de su comunidad y poder guiar la vida a personas que no tienen tanta suerte.</p>
+          <hr>
+          <img id="equipo" src="../img/avatar3.png">
+          <p class="centro">María</p>
+          <div class="popup" onclick="myFunction3()">
+            <p class="subtitulo">Click para ver mi correo, soy Consejera del consultorio</p>
+            <span class="popuptext" id="myPopup3">maria@iam.cat</span>
+          </div>
+          <p>Formo parte del equipo de Albanta desde hace 28 años y soy quién junto a ella aconsejo a las personas con sus problemas más cotidianos.</p>
+          <script>
+            function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+            }
+          </script>
+          <script>
+            function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+            }
+          </script>
+          <script>
+            function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+            }
+          </script>
+        </section>
+      </div>
+      <footer>
+        <a href="#arriba"><i id="volver" class="fa fa-arrow-circle-up"></i> VOLVER ARRIBA</a>
+        <p class="foot">EL FUTURO EN TUS MANOS</p>
+        <p class="foot">&copy; Copyright 2017</p>
+      </footer>
+    </div>
+  </body>
+</html>

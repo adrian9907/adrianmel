@@ -1,0 +1,159 @@
+.num{
+  float: left;
+  color: white;
+  font-size: 2.5vw;
+  text-shadow: 2px 2px #111;
+}
+.num:hover{
+  color: #ff884d;
+}
+* {
+    box-sizing: border-box;
+}
+.imagen {
+  overflow: hidden;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.imagen img {
+  vertical-align: middle;
+}
+.imagen .texto {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+#tarot{
+  width: 100%;
+}
+#ocultA{
+  background-color: #333;
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  padding-left: 10px;
+  z-index: 1;
+}
+.color{
+  color: #4d95cb;
+}
+button{
+  font-size:19px;
+  background-color: #ffffcc;
+  border-color: #ffffcc;
+  font-size:19px;
+  color:#28608a;
+  margin-bottom:10px;
+  transition-duration: 0.4s;
+}
+#nube{
+  margin-top: -50px;
+  margin-left: -140px;
+}
+#bola{
+  position: absolute;
+  z-index: 1;
+  margin-top: -60px;
+  margin-left: -140px;
+  width: 30px;
+  float: left;
+}
+#tel{
+  position: absolute;
+  z-index: 1;
+  margin-top: -60px;
+  margin-left: 107px;
+  width: 60px;
+  float: left;
+}
+#luna{
+  float: right;
+  margin-top: -55px;
+  position: static;
+  width: 80px;
+  z-index: 0;
+}
+#galaxy{
+  float: left;
+  margin-top: -155px;
+  position: static;
+  width: 80px;
+  z-index: 0;
+}
+.resaltado{
+  width: 100px;
+}
+.horoscopo{
+  padding-left: 0px;
+  margin-top: -10px;
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+#boto:hover #ocultA{
+  display: block;
+}
+#horoscopo{
+  overflow: hidden;
+}
+.tabla{
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.prim{
+  margin-top: -20px;
+  margin-left: -20px;
+  width: 50%;
+}
+.primA{
+  margin-top: -20px;
+  margin-left: -20px;
+  width: 50%;
+}
+.primbis{
+  margin-top: -20px;
+  margin-left: -48px;
+  width: 50%;
+}
+.primbisA{
+  margin-top: -20px;
+  margin-left: -48px;
+  width: 50%;
+}
+.seg{
+  margin-top: -20px;
+  margin-left: -175px;
+  width: 50%;
+}
+.segA{
+  margin-top: -20px;
+  margin-left: -175px;
+  width: 50%;
+}
+.terc{
+  margin-top: -295px;
+  margin-left: -20px;
+  width: 50%;
+}
+.cuart{
+  margin-top: -295px;
+  margin-left: -48px;
+  width: 50%;
+}
+.quint{
+  margin-top: -295px;
+  margin-left: -175px;
+  width: 50%;
+}
+.redondo{
+  border-top-right-radius: 30px;
+}

@@ -1,0 +1,75 @@
+@media only screen and (max-width: 770px){
+    section{
+      width: 84%;
+    }
+    ul.navegador{
+      display:block;
+      margin-left: -50px;
+      text-align: center;
+    }
+    .num{
+      font-size: 250%;
+    }
+    .material-icons{
+      font-size: 75%;
+    }
+    #galaxy{
+      overflow: hidden;
+      margin-top: -15px;
+      width: 40%;
+      position: relative;
+      animation-name: movimiento;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes movimiento {
+      0%   {left:0%;}
+      50%  {left:50%;}
+      100% {left:0%;}
+    }
+    #ocult{
+      width: 80%;
+      margin-left: 120px;
+    }
+    #ocultA{
+      font-size: 75%;
+    }
+    header{
+      margin-top: 300px;
+    }
+    #libro:hover {
+      width: 35%;
+    }
+    .container {
+      text-align: center;
+    }
+    .containerB {
+      margin-left: 30px;
+    }
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+    .primA{
+      margin-top: -115px;
+    }
+    .primbisA{
+      margin-top: -115px;
+    }
+    .segA{
+      margin-top: -115px;
+    }
+    .terc{
+      margin-top: -185px;
+    }
+    .cuart{
+      margin-top: -185px;
+    }
+    .quint{
+      margin-top: -185px;
+    }
+    #volver{
+      margin-left: 39%;
+    }
+}
